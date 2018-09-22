@@ -43,7 +43,7 @@ function sendAjaxForm1(result_form, ajax_form, url) {
         data: $("#" + ajax_form).serialize(),  // Сеарилизуем объект
         success: function (response) { //Данные отправлены успешно
             result = JSON.parse(response);
-            $('#resdecrypt').html('<span id="result">Результат дешифрування: </span><span id="value">' + result.textdecrypt + '</span><br><span id="value">' + result.arr + '</span><br>');
+            $('#resdecrypt').html('<span id="result">Результат дешифрування: </span><span id="value">' + result.textdecrypt + '</span><br><span id="result">Ключ: </span><span id="value"> + result.arr + </span><br>');
         },
         error: function (response) { // Данные не отправлены
             $('#resdecrypt').html('Помилка. Дані  не відправлені.');
