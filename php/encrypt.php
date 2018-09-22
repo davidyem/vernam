@@ -1,9 +1,8 @@
 <?php
+//define("c", 6);if you want to use lower case(symbols in the range from 97 to 122)
 define("c", 13);
-//if(isset($_POST['submitencrypt'])){
 if(!empty($_POST["messagetoencrypt"])) {
-    $message = $_POST["messagetoencrypt"];
-    $message = str_split(strtoupper(trim($message, " ")));
+    $message = str_split(strtoupper(trim($_POST["messagetoencrypt"], " ")));
     foreach ($message as $mes => $value) {
         $key = random_int(0, 25);
         $keys[] .= $key . " ";
@@ -19,5 +18,4 @@ if(!empty($_POST["messagetoencrypt"])) {
     $resultencrypt = array('textencrypt' => $crypt, 'keys' => $keys);
     echo json_encode($resultencrypt);
 }
-//}
 ?>
