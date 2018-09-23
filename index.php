@@ -33,9 +33,6 @@
             <div id="resdecrypt"></div>
         </div>
     </div>
-    <?php include ('./php/decrypt.php');
-
-    ?>
 </div>
 </body>
 </html>
