@@ -27,7 +27,7 @@
                 <h4>ВВЕДІТЬ ПОВІДОМЛЕННЯ ДЛЯ ДЕШИФРУВАННЯ</h4><br/>
                 <input id="text2" type="text" name="messagetodecrypt"><br/>
                 <input id="key" name="keys" type="hidden" value="">
-                <button id="decrypt" name="submitdecrypt">Дешифрувати</button>
+                <button id="decrypt" name="submitdecrypt">Розшифрувати</button>
             </form>
             <br/>
             <div id="resdecrypt"></div>
