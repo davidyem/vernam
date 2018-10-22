@@ -21,7 +21,7 @@ function sendAjaxForm(result_form, ajax_form, url) {
             document.getElementById('key').value = result.keys;
         },
         error: function (response) { // Данные не отправлены
-            $('#resencrypt').html('Помилка. Дані  не відправлені.');
+            $('#resencrypt').html('Помилка. Дані не відправлені.');
         }
     });
 }
@@ -46,7 +46,7 @@ function sendAjaxForm1(result_form, ajax_form, url) {
             $('#resdecrypt').html('<span id="result">Результат дешифрування: </span><span id="value">' + result.textdecrypt + '</span><br><span id="result">Ключ: </span><span id="value">' + result.arr + '</span><br>');
         },
         error: function (response) { // Данные не отправлены
-            $('#resdecrypt').html('Помилка. Дані  не відправлені.');
+            $('#resdecrypt').html('Помилка. Дані не відправлені.');
         }
     });
 }
